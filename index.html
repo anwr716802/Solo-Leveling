@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solo System</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#111">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>⚔️ Solo System</h1>
+
+<div class="dashboard">
+  <div>Level: <span id="level">0</span></div>
+  <div>XP: <span id="xp">0</span></div>
+  <div>Next: <span id="next">100</span></div>
+  <progress id="progress" value="0" max="100"></progress>
+</div>
+
+<h2>📋 المهام اليومية</h2>
+<table>
+<thead>
+<tr>
+<th>المهمة</th>
+<th>XP</th>
+<th>الحالة</th>
+</tr>
+</thead>
+<tbody id="tasks"></tbody>
+</table>
+
+<h2>🎁 المكافآت</h2>
+<ul id="rewardsList"></ul>
+
+<div id="flash"></div>
+
+<!-- أصوات -->
+<audio id="sClick" src="sounds/click.mp3"></audio>
+<audio id="sComplete" src="sounds/complete.mp3"></audio>
+<audio id="sLevel" src="sounds/levelup.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
