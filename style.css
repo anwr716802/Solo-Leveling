@@ -1,0 +1,52 @@
+body {
+  font-family: Arial;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.dashboard {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+table {
+  width: 100%;
+  background: #222;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.flash-active {
+  opacity: 0.3;
+}
