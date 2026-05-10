@@ -1,4 +1,4 @@
-const cacheName = "solo-v2";
+const cacheName = "solo-v3";
 const files = ["./", "./index.html", "./style.css", "./script.js"];
 
 self.addEventListener("install", e => {
